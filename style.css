@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Martel Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -11,136 +11,122 @@ body {
 }
 
 .main {
-    background-image: url(image/bg.jpg);
-    height: 95vh;
-    position: relative;
-    background-position-x: center;
+    background-image: url("bg.jpg");
     background-position: center center;
-    background-size: max(1250px, 100vw);
+    background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
 }
-
 
 .main .box {
-    height: 95vh;
+    height: 644px;
     width: 100%;
-    background: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95));
+    opacity: 0.69;
     position: absolute;
     top: 0;
-    box-sizing: border-box;
-    padding: 0;
+    background-color: black;
 }
 
-
 nav {
-    max-width: 80vw;
+    max-width: 60vw;
+    justify-content: space-between;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 100px;
-    z-index: 10;
-    position: relative;
 }
 
 nav img {
-    width: 160px;
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
 }
 
 .hero {
-    font-family: sans-serif;
+    font-family: 'Martel Sans', sans-serif;
     height: calc(100% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     flex-direction: column;
+    color: white;
     position: relative;
-    text-align: center;
-    padding: 0 25px;
-    gap: 20px;
+    gap: 23px;
+    padding: 0 30px;
 }
 
 .hero> :nth-child(1) {
-    font-size: 48px;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    cursor: text;
+    font-size: 48px;
+    text-align: center;
 }
 
 .hero> :nth-child(2) {
+    font-weight: 400;
     font-size: 24px;
-    cursor: text;
+    text-align: center;
 }
 
 .hero> :nth-child(3) {
+    font-weight: 400;
     font-size: 20px;
-    cursor: text;
+    text-align: center;
 }
 
-.speline {
+.separation {
     height: 7px;
-    background-color: #232323;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
 }
 
 .btn {
-    padding: 7px 10px;
-    background-color: white;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.redbtn {
-    background-color: #ec1a25;
-    color: white;
+    padding: 3px 8px;
     font-weight: 400;
-    border: 0;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
     cursor: pointer;
+
 }
 
-.redbtn:hover {
-    background-color: #C11119;
-}
-
-.sn {
-    font-size: 15px;
-    padding: 5px 20px 5px 20px;
-}
-
-.gs {
-    font-size: 25px;
-    padding: 9px 15px 12px 15px;
-    margin-left: 5px;
-    font-weight: 300;
-}
-
-input {
-    background-color: rgba(23, 23, 23, 0.8);
-    font-size: 15px;
+.btn-red {
+    background-color: red;
     color: white;
-    padding: 18px 200px 12px 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    cursor: text;
-}
-
-input::placeholder {
-    font-weight: bold;
-    opacity: 0.5;
-    color: white;
-}
-
-.laginput {
-    background-color: rgba(23, 23, 23, 0.8);
+    padding: 3px 24px;
     font-size: 20px;
-    padding: 0px 10px 0px 15px;
-    color: white;
-    font-weight: 400;
-    margin: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
 }
 
 .first {
@@ -244,7 +230,7 @@ footer .questions {
 
 @media screen and (max-width: 1300px) {
 
-    nav {
+    nav{
         max-width: 90vw;
     }
 
@@ -290,10 +276,10 @@ footer .questions {
         padding: 75px 0;
     }
 
-    .footer-item {
+    .footer-item{
         align-items: center;
     }
-
+ 
 
 }
 
